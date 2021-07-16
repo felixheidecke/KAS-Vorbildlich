@@ -1,0 +1,20 @@
+// 1. Your custom variables and variable overwrites.
+
+$global-primary-background: #009fe4;
+// $global-secondary-background: #E34C0B;
+
+// $base-body-font-size: 26px;
+$global-font-size: 22px;
+$global-color: #353535;;
+
+$base-body-font-family: 'Roboto', sans-serif;
+$base-body-font-weight: 300;
+
+$base-heading-font-family: 'Roboto Condensed', sans-serif;
+$base-heading-font-weight: 400;
+
+$width-medium-width: 360px;
+
+// 2. Import default variables and available mixins.
+@import "@/node_modules/uikit/src/scss/variables-theme.scss";
+@import "@/node_modules/uikit/src/scss/mixins-theme.scss";

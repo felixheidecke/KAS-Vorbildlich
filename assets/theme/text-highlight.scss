@@ -1,0 +1,12 @@
+.text-highlight {
+  box-decoration-break: clone;
+  padding: 4px 8px;
+
+  background: #1e1d18;
+  color: white;
+
+  &--pull {
+    display: inline-block;
+    transform: translateX(-8px);
+  }
+}
