@@ -34,9 +34,27 @@
       h4
         | Erzieher und Erzieherinnen in Deutschland
         br
-        span.uk-text-meta Quelle: Statistisches Bundesamt 03/2020
 
-      img(:src="imagehosting_path(960, 'grafik-erzieher-und-erzieherinnen-in-deutschland.png')" alt="Erzieher und Erzieherinnen in Deutschland").uk-margin-large-bottom
+      .uk-grid(uk-grid)
+        .uk-width-1-1
+          img(src="./erzieher_und_erzieherinnen_in_deutschland.png").uk-padding-small.uk-box-shadow-medium
+
+        div(class="uk-width-1-2@s")
+          p.uk-text-xsmall
+            span.uk-display-block.uk-text-bold Die zehn beliebstesten Handwerksberufe
+            span weiblicher Azubis 2019
+
+          img(src="./grafik_handwerk_12.png").uk-padding-small.uk-box-shadow-medium
+
+        div(class="uk-width-1-2@s")
+          p.uk-text-xsmall
+            span.uk-display-block.uk-text-bold Wo Handwerk weiblicher wird
+            span Anteil der weiblichen Auszubildenden im Zeitvergleich
+
+          img(src="./grafik_handwerk_22.png").uk-padding-small.uk-box-shadow-medium
+
+        .uk-width-1-1
+          span.uk-text-meta Quelle: Statistisches Bundesamt 03/2020
 
       TextboxBerry
         template(#question) Wie haben deine Freundinnen auf deinen Berufswunsch reagiert?
