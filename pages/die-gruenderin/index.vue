@@ -17,7 +17,7 @@
 
       p „Ganz früher wollte ich Sängerin werden. Das war mein Kindheitstraum“, schmunzelt Jessica Büttner. „Später, als es dann darum ging, sich fürs Studium zu bewerben, wusste ich nicht, was ich machen soll. Ich habe mich verloren gefühlt und mich auf fast alle Studienangebote beworben. Es gab keine sinnvolle vorbereitende Berufsorientierung.“ Mit Gründerinnen und Gründern kam Jessica Büttner während der Schullaufbahn nicht in Kontakt. „Das geht doch so nicht. Einen Berufswunsch bildet man schließlich während der Schulzeit.“
 
-      p Während des Studiums kam bei Jessica Büttner der Gedanke auf, eine Firma zu gründen. Sie studierte Sozialwissenschaften im Bachelor und European Culture and Economy im Master. Parallel sammelte sie Berufserfahrungen und leitete Seminare in einer Akademie. „Bei einem der Seminare besuchten wir ein Start-Ups und ich kam zum ersten Mal in Kontakt mit Gründern. Das war eine andere Mentalität. Die hatten eine Popcorn-Maschine und waren so begeistert von ihrer Arbeit“, Jessica Büttner erinnert sich noch genau daran, was sie direkt an der Arbeitskultur in Start-Ups faszinierte. Es war locker, man arbeitete ohne Barrieren und super effizient. Eine ganz andere Mentalität: „Ich war so beeindruckt, dass die Mitarbeiter Klartext gesprochen haben, auch dem Chef gegenüber. Die waren so ehrlich miteinander.“ Von dieser Atmosphäre inspiriert, wechselte sie als Beraterin in ein Gründungszentrum, welches Start-Ups betreut. Begeistert von der effektiven Arbeitsweise und motiviert durch dieses Umfeld wuchs in ihr die Frage: Kann ich das auch? Gründen?
+      p Während des Studiums kam bei Jessica Büttner der Gedanke auf, eine Firma zu gründen. Sie studierte Sozialwissenschaften im Bachelor und European Culture and Economy im Master. Parallel sammelte sie Berufserfahrungen und leitete Seminare in einer Akademie. „Bei einem der Seminare besuchten wir ein Start-Up und ich kam zum ersten Mal in Kontakt mit Gründern. Das war eine andere Mentalität. Die hatten eine Popcorn-Maschine und waren so begeistert von ihrer Arbeit“, Jessica Büttner erinnert sich noch genau daran, was sie direkt an der Arbeitskultur in Start-Ups faszinierte. Es war locker, man arbeitete ohne Barrieren und super effizient. Eine ganz andere Mentalität: „Ich war so beeindruckt, dass die Mitarbeiter Klartext gesprochen haben, auch dem Chef gegenüber. Die waren so ehrlich miteinander.“ Von dieser Atmosphäre inspiriert, wechselte sie als Beraterin in ein Gründungszentrum, welches Start-Ups betreut. Begeistert von der effektiven Arbeitsweise und motiviert durch dieses Umfeld wuchs in ihr die Frage: Kann ich das auch? Gründen?
 
     Container(v-if="mediaquery.s")
       AudioPlayer(file="/die-gruenderin/audio_02.mp3" :img="imagehosting_path(1600, '6fdc9280bb539f8eae06a6ccd5642dd6.png')" progressColor="#FFE94A" waveColor="#FFF").uk-margin-medium-bottom.uk-box-shadow-large.uk-padding-small
@@ -38,7 +38,7 @@
 
         AudioPlayer(file="/die-gruenderin/audio_03.mp3" progressColor="#FFE94A" waveColor="#BAC6CB").uk-margin-small-top.uk-margin-medium-bottom
 
-      p Auch viele ihrer Freundinnen sind beruflich erfolgreich darin, ihre eigenen beruflichen Ziele zu verfolgen: „Das sind Frauen, die sich hohe Ziele gesetzt haben und erfolgreich sind in dem was sie tun. Eine ist bei der Europäischen Kommission. Eine andere trägt viel Verantwortung bei der Bank. Eine andere übernimmt einen Verlag“. Der Erfolg der Freundinnen, auch wenn keine Gründerin darunter ist, macht ihr Mut.
+      p Auch viele ihrer Freundinnen sind beruflich erfolgreich darin, ihre eigenen beruflichen Ziele zu verfolgen: „Das sind Frauen, die sich hohe Ziele gesetzt haben und erfolgreich sind in dem was sie tun. Eine ist bei der Europäischen Kommission. Eine andere trägt viel Verantwortung bei der Bank. Eine andere übernimmt einen Verlag.“ Der Erfolg der Freundinnen, auch wenn keine Gründerin darunter ist, macht ihr Mut.
 
     Container(v-if="mediaquery.s")
       AudioPlayer(file="/die-gruenderin/audio_04.mp3" :img="imagehosting_path(1600, '0d3660b9f6d5c5fd100bdf72756a7172.png')" progressColor="#FFE94A" waveColor="#FFF").uk-margin-medium-bottom.uk-box-shadow-large.uk-padding-small
@@ -56,13 +56,13 @@
 
     Container(size="small" margin="medium")
 
-      p Angst vorm Scheitern hat Jessica Büttner nicht: „Klar, ich kenne die Zahlen. Die Möglichkeit, mit dieser Idee, mit diesem Start-Ups zu scheitern, ist relativ hoch. Damit müssen wir rechnen und das einkalkulieren. Aber selbst wenn, was kann denn passieren? Ich habe keine Verantwortung, keine Kinder, keine Schulden. Zu Gründen ist auch ein Investment in mich selbst. In mein Wissen. Diese Lernkurve mache ich nirgendwo sonst durch.“
+      p Angst vorm Scheitern hat Jessica Büttner nicht: „Klar, ich kenne die Zahlen. Die Möglichkeit mit einem Startup zu scheitern, ist relativ hoch. Damit müssen wir rechnen und das einkalkulieren. Aber selbst wenn, was kann denn passieren? Ich habe keine Verantwortung, keine Kinder, keine Schulden. Zu Gründen ist auch ein Investment in mich selbst. In mein Wissen. Diese Lernkurve mache ich nirgendwo sonst durch.“
 
       AudioPlayer(file="/die-gruenderin/audio_06.mp3" :img="imagehosting_path(1600, '5880f46d581559fe095ec0746f9543de.jpeg')" progressColor="#FFE94A" waveColor="#FFF" pos="right").uk-width-medium.uk-margin-small-top.uk-margin-medium-bottom
 
       p Ein bisschen zusätzliche Sicherheit braucht sie aber doch. Um vom Erfolg des Start-Ups finanziell unabhängig zu bleiben, hat Jessica einen Nebenerwerb: „Ich habe meine Ausgaben kalkuliert, überlegt welches Einkommen ich benötige, um diese zu decken und dann nach Nebenjobs gesucht. Da war ich echt nervös. Ich habe schlecht geschlafen, Stress gehabt. Ich war nachts wach und habe nach Stellen geschaut. Aber: Es hat alles innerhalb von vier Wochen geklappt.“ Auch ihre Familie und vor allem ihr Partner unterstützen sie: „Es ist entscheidend, dass der Partner hinter einem steht. Wenn man eine belastbare Beziehung hat, gibt das zusätzliche Sicherheit. Wenn ich ganz alleine wäre weiß ich nicht, ob ich gegründet hätte“.
 
-      p Es läuft gut mit dem Start-Up ein halbes Jahr nach dem Start. Jessica Büttner reicht das nicht. Sie will ihre Erfahrungen weitergeben und andere Frauen so unterstützen, auch zu gründen. Das Vorbild sein, dass sie selber gern gehabt hätte.
+      p Es läuft gut mit dem Start-Up ein halbes Jahr nach dem Start. Jessica Büttner reicht das nicht. Sie will ihre Erfahrungen weitergeben und andere Frauen so unterstützen, auch zu gründen. Das Vorbild sein, das sie selber gern gehabt hätte.
 
     .uk-position-relative.uk-background-fixed(v-bind="about")
       Container(size="small" margin="medium").uk-padding-large

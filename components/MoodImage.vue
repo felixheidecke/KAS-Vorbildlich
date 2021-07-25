@@ -4,6 +4,7 @@
       <h1 :class="headingClass">
         <slot />
       </h1>
+      <slot name="intro" />
     </div>
   </div>
 </template>

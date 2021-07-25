@@ -4,7 +4,7 @@
     Container(size="small" margin="large")
       .uk-grid.uk-grid-large(uk-grid class="uk-child-width-1-2@s")
         p
-          strong.colorbox.colorbox--block.colorbox--left.colorbox--orange.uk-text-lead Simon schließlich
+          strong.colorbox.colorbox--block.colorbox--left.colorbox--orange.uk-text-lead Simon Schließlich
           br
           span.uk-display-block.uk-text-justify 35 Jahre alt, staatlich anerkannter Erzieher in Frankfurt. Nach dem Geschichtsstudium und einem Büro-Job arbeitet er seit mittlerweile zwei Jahren als Erzieher in einem Kindergarten.
 
@@ -37,21 +37,21 @@
 
       .uk-grid(uk-grid)
         .uk-width-1-1
-          img(src="./erzieher_und_erzieherinnen_in_deutschland.png").uk-padding-small.uk-box-shadow-medium
+          img(src="./erzieher_und_erzieherinnen_in_deutschland.png" @click="windowOpen").uk-padding-small.uk-box-shadow-medium.uk-cursor-pointer
 
         div(class="uk-width-1-2@s")
           p.uk-text-xsmall
             span.uk-display-block.uk-text-bold Die zehn beliebstesten Handwerksberufe
             span weiblicher Azubis 2019
 
-          img(src="./grafik_handwerk_12.png").uk-padding-small.uk-box-shadow-medium
+          img(src="./grafik_handwerk_12.png" @click="windowOpen").uk-padding-small.uk-box-shadow-medium.uk-cursor-pointer
 
         div(class="uk-width-1-2@s")
           p.uk-text-xsmall
             span.uk-display-block.uk-text-bold Wo Handwerk weiblicher wird
             span Anteil der weiblichen Auszubildenden im Zeitvergleich
 
-          img(src="./grafik_handwerk_22.png").uk-padding-small.uk-box-shadow-medium
+          img(src="./grafik_handwerk_22.png" @click="windowOpen").uk-padding-small.uk-box-shadow-medium.uk-cursor-pointer
 
         .uk-width-1-1
           span.uk-text-meta Quelle: Statistisches Bundesamt 03/2020
@@ -85,7 +85,7 @@
       TextboxOrange
         template(#question) Je jünger die Kinder sind, desto weniger Männer arbeiten in dem Bereich. Was hat es damit auf sich?
         template(#answer)
-          Video(:src="{ 'video/webm': '/neue-vorbilder/simon_1.webm' }" controls).uk-pull-small.uk-margin-bottom
+          Video(:src="{ 'video/webm': '/neue-vorbilder/simon_1.webm', 'video/mp4': '/neue-vorbilder/simon_1.mp4' }" controls).uk-pull-small.uk-margin-bottom
           p Für die meisten Männer ist es schlichtweg einfacher, mit älteren Kindern zu arbeiten. Die älteren Kinder reagieren auf Erzieher noch mal anders. Sie nehmen die Vorbildrolle viel stärker wahr, die man als Mann ausstrahlt. Es gibt aber oftmals auch noch Vorbehalte von Eltern gegenüber Männern in der Krippe. Dort gehört das Wickeln von Kleinkindern beispielsweise zur täglichen Arbeit. Manche Männer wollen sich keinem Generalverdacht aussetzen. Bei mir war der Schritt in den Kindergarten tatsächlich das Interesse an der Arbeit. Ich habe aber viele Kollegen in der Ausbildung getroffen, die gesagt haben, es sei zwar interessant in der Krippe zu arbeiten, aber sie möchten nicht Gefahr laufen, dass sie beschuldigt werden oder ihnen etwas angelastet wird.
 
       TextboxOrange
@@ -115,8 +115,7 @@
         template(#question) Hast du dir auch schon mal einen Spruch gefangen?
         template(#answer)
           AudioPlayer(file="/neue-vorbilder/jessica_02.mp3" :img="imagehosting_path(960, 'bild_1.jpg')").uk-margin-top.uk-margin-bottom
-          p Das erste Mal Fassadenputz aufziehen. Ich war komplett fertig mit den Nerven, komplett. Als Azubi bist du derjenige, der den Putz von A nach B trägt. Der jeden mit Putzeimern versorgt, runter, hoch, alles anmischen und überall schreit es nur: Jessica hierüber! Nein dahin! Nein! Und ich stand da und habe später gesagt: Ich kann das nicht. Ich bin komplett fertig. Und alle so: Wieso denn? War doch voll gut, gab doch überhaupt kein Problem. War doch alles richtig. Und ich sage, ihr habt mich alle angeschrien. Ihr habt mich alle so angeschrien. Nee nee, das ist normal so. Aber das sind so Sachen, wo ich mittlerweile weiß, das meint keiner persönlich. Das ist einfach nur in dem Affekt. Okay, los, los, los, das muss jetzt gut werden. Und wir haben nur einen bestimmten Zeitraum, wo wir das verarbeiten können. Aber das sind so Sachen, wo ich dann dachte, jetzt weiß ich, was der Papa gemeint hat.
-          | Aktuell nicht. Ich hätte gerne eine Kollegin. Wir haben allerdings eine Auszubildende. Ich würde mich freuen, wenn mehr Mädels sich trauen, in Handwerksberufe zu gehen. Dafür muss sich aber auch das Bild in der Gesellschaft ändern. Das Handwerk ist leider nicht mehr so angesehen, wie es das mal war. Ich glaube auch, dass Eltern oder Lehrer teilweise den Mädels die Ausbildung im Handwerk wieder ausreden und sagen, mach doch lieber ein Studium, das ist sicherer. Dabei werden händeringend Leute im Handwerk gesucht und die Berufsaussichten sind sehr gut.
+          p Aktuell nicht. Ich hätte gerne eine Kollegin. Wir haben allerdings eine Auszubildende. Ich würde mich freuen, wenn mehr Mädels sich trauen, in Handwerksberufe zu gehen. Dafür muss sich aber auch das Bild in der Gesellschaft ändern. Das Handwerk ist leider nicht mehr so angesehen, wie es das mal war. Ich glaube auch, dass Eltern oder Lehrer teilweise den Mädels die Ausbildung im Handwerk wieder ausreden und sagen, mach doch lieber ein Studium, das ist sicherer. Dabei werden händeringend Leute im Handwerk gesucht und die Berufsaussichten sind sehr gut.
 
       TextboxBerry
         template(#question) Müssen sich Frauen in Handwerksberufen an den Ton der Männer anpassen oder sogar selbst zum Kerl werden?
@@ -124,12 +123,7 @@
           p An den rauen Umgangston muss sich keiner anpassen. Aber wenn man als Frau auch mal gerne einen dummen Spruch drückt, kann sie das natürlich. Da muss sich niemand verstecken nach dem Motto: Ich bin eine Frau, ich darf jetzt nichts Ungehobeltes sagen. Aber sie muss auch nicht alle Baustellen-Klischees erfüllen, weil sie eine Ausbildung auf dem Bau macht. Es gibt daher zwei Optionen, wenn der Kollege fragt: Nah, kriegst du es hin oder muss ich bissi helfen? Entweder man spielt mit und sagt etwas Lustiges zurück oder man spiegelt, dass man solche Sprüche nicht witzig findet.
 
       TextboxBerry
-        template(#question) Müssen sich Frauen in Handwerksberufen an den Ton der Männer anpassen oder sogar selbst zum Kerl werden?
-        template(#answer)
-          p An den rauen Umgangston muss sich keiner anpassen. Aber wenn man als Frau auch mal gerne einen dummen Spruch drückt, kann sie das natürlich. Da muss sich niemand verstecken nach dem Motto: Ich bin eine Frau, ich darf jetzt nichts Ungehobeltes sagen. Aber sie muss auch nicht alle Baustellen-Klischees erfüllen, weil sie eine Ausbildung auf dem Bau macht. Es gibt daher zwei Optionen, wenn der Kollege fragt: Nah, kriegst du es hin oder muss ich bissi helfen? Entweder man spielt mit und sagt etwas Lustiges zurück oder man spiegelt, dass man solche Sprüche nicht witzig findet.
-
-      TextboxBerry
-        template(#question) Was sind denn die gängigen Vorurteile euch Malerin gegenüber?
+        template(#question) Was sind denn die gängigen Vorurteile euch Malern gegenüber?
         template(#answer)
           AudioPlayer(file="/neue-vorbilder/jessica_03.mp3" :img="imagehosting_path(960, 'bild_4.jpg')").uk-margin-top.uk-margin-bottom
           p Dass wir nur die sind, die dreckig rumlaufen, die alles einsauen und Wände nur weiß streichen. Wie vielfältig der Beruf ist und was für schöne Sachen wir machen, das sehen viele nicht. Beruf sind jetzt zum Beispiel auch Bodenbelege. Auch das machen wir mit als ich. Wir machen jetzt keinen Echtholzparkett wie der Schreiner, aber auch ganz viele verschiedene Bodenbeläge. Alles, was in Großraumbüros liegt, dieser Nadelfilz oder so diese Riesen Anna Rollenware es sind alles Teilbereiche formaler Beruf. Wer weiß, wo auch keiner. Und wie alt es sind, so viele Sachen, wo man sagt, das ist der. Der Beruf ist einfach so vielfältig. Und man kann damit so viel machen. Das ist einfach ich ich. Ich habe das Gefühl, das kommt noch nicht so so rüber. Ach, sind diese Außendarstellung, und da ist ein bisschen auch. Sind die dem alle auch selbst dafür verantwortlich, wie sie sich halt auch präsentieren, als ich sie auch oft genug für Mäuse? Ujuiu das sieht jetzt net so Bombe aus.
@@ -147,7 +141,7 @@
       TextboxOrange
         template(#question) Reagieren auch die Kinder anders auf dich als bei den Kolleginnen?
         template(#answer)
-          Video(:src="{ 'video/webm': '/neue-vorbilder/simon_2.webm' }" controls).uk-pull-small.uk-margin-bottom
+          Video(:src="{ 'video/webm': '/neue-vorbilder/simon_2.webm', 'video/mp4': '/neue-vorbilder/simon_2.mp4' }" controls).uk-pull-small.uk-margin-bottom
           p Klar nehmen die Kinder einen als Mann noch mal anders wahr. Sie projizieren ihr Papa-Rollenmodell gefühlt auch eher auf einen Erzieher als die Mama-Rolle auf eine Erzieherin. Das, was typischerweise die Väter mit ihren Kindern machen, also toben, ein bisschen wilder und lauter sein, das wird von den Kindern bei Erziehern häufig gewünscht. Viele männliche Erzieher bieten das auch gerne. Ich mache auch immer wieder mal Quatsch mit den Kindern. Das sind Situationen, in denen sich die Rollenklischees bewahrheiten.
 
       TextboxBerry
@@ -193,7 +187,13 @@ export default {
   mixins: [
     imagehosting
   ],
-  layout: 'article'
+  layout: 'article',
+
+  methods: {
+    windowOpen (event) {
+      window.open(event.target.getAttribute('src'), '_blank')
+    }
+  }
 }
 </script>
 

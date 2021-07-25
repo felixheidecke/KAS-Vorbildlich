@@ -1,7 +1,7 @@
 <template>
   <li @click="gotoLink">
     <div class="uk-position-relative">
-      <img :src="this.imagehosting_path(960, img)" class="uk-width-expand" :alt="title">
+      <img :src="imagehosting_path(960, img)" class="uk-width-expand" :alt="title">
       <h4 class="uk-position-bottom-left text-highlight uk-margin-remove uk-text-uppercase">
         {{ title }}
       </h4>

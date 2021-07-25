@@ -15,7 +15,7 @@
       AudioPlayer(file="/die-kleinen/audio_1_abedi.mp3" :img="imagehosting_path(480, '697bd2b013f97393b428c6c089d11f1c.jpg')" pos="left").uk-width-medium.uk-margin-small-top.uk-margin-medium-bottom.uk-box-shadow-large
 
       p
-        | Eine von ihnen ist Lola. Auf den ersten Blick hat sie ein ziemlich gewöhnliches Leben. Aber wenn sie träumt, erlebt sie große Abenteuer und wird zum Rockstar, zu Detektivin oder Reporterin. Viele Kinder, besonders Mädchen, sehen in Lola eine Heldin. „Das war mir am Anfang nicht klar, darauf habe ich sie auch nicht angelegt“, sagt die Autorin Isabel Abedi heute dazu.
+        | Eine von ihnen ist Lola. Auf den ersten Blick hat sie ein ziemlich gewöhnliches Leben. Aber wenn sie träumt, erlebt sie große Abenteuer und wird zum Rockstar, zu Detektivin oder Reporterin. Viele Kinder, besonders Mädchen, sehen in Lola eine Heldin. „Das war mir am Anfang nicht klar, darauf habe ich sie auch nicht angelegt“, sagt die Autorin Isabel Abedi heute dazu.&nbsp;
         img(:src="imagehosting_path(480, '067c89e0047f58d5bd622a60f01813cd.png')").uk-width-small.uk-float-right
         | Der Wunsch des Verlages sei damals explizit eine Buch-Reihe für Mädchen gewesen. So ist das Buchcover des ersten Bandes „Hier kommt Lola“ zwar rosa – aber Mädchen-Klischees sucht man in der Reihe vergeblich. Darauf habe sie extrem geachtet, betont Abedi. Sie habe einen ganz normalen Menschen mit ganz normalen Eigenarten erschaffen wollen. Lola wünscht sich zwar eine beste Freundin, aber kommt auch mit Jungs klar. „Das hat viel damit zu tun, dass auch ich so ein Mädchen war, ich bin besser mit Jungs klargekommen als mit Mädchen. Ich habe die Jungs-Sprache besser verstanden“, erinnert sich die Autorin.
 
@@ -32,7 +32,7 @@
       AudioPlayer(file="/die-kleinen/audio_1_schomburg.mp3" :img="imagehosting_path(480, '0027def015e9d7a70776c768e8f1fe3c.jpg')" pos="left").uk-width-medium.uk-margin-small-top.uk-margin-medium-bottom.uk-box-shadow-large
 
       p
-        | Eine Identifikationsfigur schaffen, nahbar sein – darum geht es auch der Autorin Andrea Schomburg, wenn sie Geschichten für Kinder schreibt. Zum Beispiel „Der halbste Held der ganzen Welt.“ Im Gegensatz zu Lola ist der halbste Held Paul ein eher introvertiertes, ängstliches Kind. Er ist nicht nur auf der Suche nach Freundschaft, sondern wird auch noch in der Schule gemobbt.
+        | Eine Identifikationsfigur schaffen, nahbar sein – darum geht es auch der Autorin Andrea Schomburg, wenn sie Geschichten für Kinder schreibt. Zum Beispiel „Der halbste Held der ganzen Welt.“ Im Gegensatz zu Lola ist der halbste Held Paul ein eher introvertiertes, ängstliches Kind. Er ist nicht nur auf der Suche nach Freundschaft, sondern wird auch noch in der Schule gemobbt.&nbsp;
 
         img(:src="imagehosting_path(480, 'dddbe8ccac370df3c67d45073c2734f2.png')").uk-width-small.uk-float-right
 
@@ -50,7 +50,7 @@
 
       h2 „Auch du bist nicht perfekt, aber auch du kannst es schaffen“
 
-      p Viel interessanter sei für sie die Heldenfigur, die eine Schwachstelle habe. Angefangen bei dem vermeintlich unverwundbaren Achilles in der griechischen Mythologie oder Siegfried in der Nibelungensage, deren Schwächen sich unmittelbar in ihren verwundbaren Körpern wiederfinden, sieht Schomburg in der modernen Literatur immer häufiger verletzliche Heldenfiguren im Mittelpunkt. Ihr gehe es beim Schreiben darum, Werte zu vermitteln – aber eben auf Augenhöhe. „Alles, was ich schreibe, transportiert die Werte, die ich gut finde. Auch, wenn ich natürlich Antagonisten kreiere, die diese Werte gar nicht vermitteln. Also welche, die richtigen Ärsche sind. Die kriegen aber dann richtig einen aufs Dach und es wird eben gezeigt: mit bestimmten Verhaltensweisen kommt man nicht weiter.“
+      p Viel interessanter sei für sie die Heldenfigur, die eine Schwachstelle habe. Angefangen bei dem vermeintlich unverwundbaren Achilles in der griechischen Mythologie oder Siegfried in der Nibelungensage, deren Schwächen sich unmittelbar in ihren verwundbaren Körpern wiederfinden, sieht Schomburg in der modernen Literatur immer häufiger verletzliche Heldenfiguren im Mittelpunkt. Ihr gehe es beim Schreiben darum, Werte zu vermitteln – aber eben auf Augenhöhe. „Alles, was ich schreibe, transportiert die Werte, die ich gut finde. Auch, wenn ich natürlich Antagonisten kreiere, die diese Werte gar nicht vermitteln. Also welche, die richtige Ärsche sind. Die kriegen aber dann richtig einen aufs Dach und es wird eben gezeigt: mit bestimmten Verhaltensweisen kommt man nicht weiter.“
 
       AudioPlayer(file="/die-kleinen/audio_3_schomburg.mp3" backgroundColor="transparent" progressColor="#000" waveColor="#7fcff1")
 
@@ -58,7 +58,7 @@
 
       h2 Freunde und Weggefährten
 
-      p Genau das hat auch Lola-Autorin Abedi in ihren eigenen  Heldenfiguren ihrer Kindheit gesehen. Der größte Held sei für Sie Bastian aus der unendlichen Geschichte gewesen. An ihm habe sie bewundert, wie er als trauriges, verspottetes Kind über sich hinauswächst. „Für mich waren die Helden in Büchern meistens Kinder, die mit viel Angst ausgestattet waren und dann aber den Mut hatten, dieser Angst zu begegnen und daran zu wachsen.“  Ähnlich seien die Jungs in den Büchern, die sie heute schreibt, Außenseiter-Typen oder Kinder, die mit alleinerziehenden Eltern aufwachsen – genau wie Bastian in der unendlichen Geschichte und auch sie selbst. In ihrer eigenen Geschichte sehe sie eine Mischung aus der Verantwortung und Gabe, Kindern den Wunsch nach Identifikation zu erfüllen. „Egal ob zwischen zwei Kulturen oder zwei Gendern – mit Grenzgängern, Grenztänzern und Grenzverwischern habe ich eine ganz große Verbindung.“
+      p Genau das hat auch Lola-Autorin Abedi in ihren eigenen  Heldenfiguren ihrer Kindheit gesehen. Der größte Held sei für sie Bastian aus der unendlichen Geschichte gewesen. An ihm habe sie bewundert, wie er als trauriges, verspottetes Kind über sich hinauswächst. „Für mich waren die Helden in Büchern meistens Kinder, die mit viel Angst ausgestattet waren und dann aber den Mut hatten, dieser Angst zu begegnen und daran zu wachsen.“  Ähnlich seien die Jungs in den Büchern, die sie heute schreibt, Außenseiter-Typen oder Kinder, die mit alleinerziehenden Eltern aufwachsen – genau wie Bastian in der unendlichen Geschichte und auch sie selbst. In ihrer eigenen Geschichte sehe sie eine Mischung aus der Verantwortung und Gabe, Kindern den Wunsch nach Identifikation zu erfüllen. „Egal ob zwischen zwei Kulturen oder zwei Gendern – mit Grenzgängern, Grenztänzern und Grenzverwischern habe ich eine ganz große Verbindung.“
 
       AudioPlayer(file="/die-kleinen/audio_3_abedi.mp3" backgroundColor="transparent" progressColor="#000" waveColor="#7fcff1")
 
