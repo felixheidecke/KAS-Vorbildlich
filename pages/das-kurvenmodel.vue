@@ -28,8 +28,8 @@
     Container(size="small" margin="medium")
       p Mit ihrem Selbstbewusstsein möchte sie Vorbild für andere kurvige Frauen zu sein: Das, was ihr früher selbst gefehlt habe, erzählt sie. Denn die Fettfeindlichkeit in der Gesellschaft fange schon mit der Darstellung von dicken Menschen in den Medien an: „Schaut man sich Filme an, spielen kaum dicke oder kurvige Person eine Hauptrolle, ohne dass sie irgendein Thema mit ihrem Gewicht hat. Das Gewicht wird immer thematisiert: Und immer muss die Protagonistin am Ende abnehmen, um glücklich zu sein, um einen Mann zu finden. Eine kurvige Frau darf nicht einfach existieren, so wie sie ist. Können wir vielleicht mal verinnerlichen, dass es Menschen gibt, die einfach eine rundere Statur haben. Genauso wie es Menschen gibt, die nicht zunehmen?“, sagt Kremer aufgebracht.
 
-      Video(v-if="mediaquery.s" autoplay loop :src="videoMissGermany.desktop").uk-margin-large-left.uk-margin-large-right.uk-margin-large-bottom
-      Video(v-if="!mediaquery.s" autoplay loop :src="videoMissGermany.mobile")
+      YouTube(v-if="mediaquery.s" videoId="asCQ27dQUAI" autoplay loop).uk-aspect-ratio-16-9
+      YouTube(v-else videoId="Wq34B8M3hjc" autoplay loop).uk-aspect-ratio-16-9
 
       p Einfach existieren zu können, ohne Anfeindungen, Mobbing und Diskriminierung, das wünscht sich Julia Kremer. Sie scheint fast müde, das imantraartig immer wieder zu wiederholen. „Jedes Mal wenn ich auf mein Gewicht angesprochen werde und darauf reduziert werde, dann triggert das was in einem, das stresst einen und das ist es, was es am Ende lebensbedrohlich macht. Es gibt Studien die zeigen, dass Diskriminierung mehrgewichtiger Menschen sehr viel gravierendere Auswirkungen haben.“  Sie selbst hatte jahrelang mit Essstörungen zu kämpfen und arbeitete mittels Traumatherapie daran, auch negative Gedanken gegenüber sich selbst und ihrem Körper abzubauen.
 
@@ -77,22 +77,10 @@ export default {
     imagehosting,
     mediaquery
   ],
+
   layout: 'article',
 
   computed: {
-    videoMissGermany () {
-      return {
-        mobile: {
-          'video/webm': '/das-kurvenmodel/Video1_MissGermany_mobile.webm',
-          'video/mp4': '/das-kurvenmodel/Video1_MissGermany_mobile.mp4'
-        },
-        desktop: {
-          'video/webm': '/das-kurvenmodel/Video1_MissGermany.webm',
-          'video/mp4': '/das-kurvenmodel/Video1_MissGermany.mp4'
-        }
-      }
-    },
-
     audio01 () {
       return {
         file: '/das-kurvenmodel/julia-audio-01.mp3',

@@ -1,3 +1,5 @@
+import { resolve } from 'path'
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -52,6 +54,10 @@ export default {
     extend (config) {
       config.resolve.alias.vue = 'vue/dist/vue.common'
     }
+  },
+
+  alias: {
+    'uikit-variables': resolve(__dirname, 'node_modules/uikit/src/scss/variables.scss'), // eslint-disable-line
   },
 
   server: {

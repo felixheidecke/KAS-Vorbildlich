@@ -10,10 +10,10 @@
 import mediaquery from '~/plugins/mediaquery.mixin'
 
 export default {
-
   mixins: [
     mediaquery
   ],
+
   props: {
     src: {
       type: Object,

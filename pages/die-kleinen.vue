@@ -16,7 +16,7 @@
 
       p
         | Eine von ihnen ist Lola. Auf den ersten Blick hat sie ein ziemlich gewöhnliches Leben. Aber wenn sie träumt, erlebt sie große Abenteuer und wird zum Rockstar, zu Detektivin oder Reporterin. Viele Kinder, besonders Mädchen, sehen in Lola eine Heldin. „Das war mir am Anfang nicht klar, darauf habe ich sie auch nicht angelegt“, sagt die Autorin Isabel Abedi heute dazu.&nbsp;
-        img(:src="imagehosting_path(480, '067c89e0047f58d5bd622a60f01813cd.png')").uk-width-small.uk-float-right
+        img(:src="imagehosting_path(480, '067c89e0047f58d5bd622a60f01813cd.png')" loading="lazy").uk-width-small.uk-float-right
         | Der Wunsch des Verlages sei damals explizit eine Buch-Reihe für Mädchen gewesen. So ist das Buchcover des ersten Bandes „Hier kommt Lola“ zwar rosa – aber Mädchen-Klischees sucht man in der Reihe vergeblich. Darauf habe sie extrem geachtet, betont Abedi. Sie habe einen ganz normalen Menschen mit ganz normalen Eigenarten erschaffen wollen. Lola wünscht sich zwar eine beste Freundin, aber kommt auch mit Jungs klar. „Das hat viel damit zu tun, dass auch ich so ein Mädchen war, ich bin besser mit Jungs klargekommen als mit Mädchen. Ich habe die Jungs-Sprache besser verstanden“, erinnert sich die Autorin.
 
       h2 „Von der Wirklichkeit abgeschrieben“
@@ -24,8 +24,8 @@
       AudioPlayer(file="/die-kleinen/audio_2_abedi.mp3" backgroundColor="transparent" progressColor="#000" waveColor="#7fcff1")
 
       p
-        img(:src="imagehosting_path(480, '64f4c2558e6dbe22e18440bda9ca9672.png')").uk-width-small.uk-float-right
-        | Das sei nicht der der einzige Aspekt, in dem Abedi ihre eigene Lebensgeschichte sehe. Lolas Vater kommt aus Brasilien. Weil ihr Papai – so nennt Lola ihren Vater auf portugiesisch – in einer kleinen Stadt rassistische Diskriminierung erfährt, zieht sie mit ihren Eltern nach Hamburg, in eine große Stadt. Auch Abedi lebt in Hamburg, der Vater ihrer Töchter ist Brasilianer und auch sie selbst hat eine internationale Geschichte. Ihr Vater kommt aus dem Iran, sie kenne ihn aber kaum. An ihre Schulzeit erinnert sie sich: „da waren Klassen nicht so multikulturell ausgerichtet wie heute. Da gab es dann ein paar Gastarbeiterkinder und mich. Und bei mir war es nicht so richtig definierbar, weil ich eben dieses seltsame Kind mit dem ausländischen Namen war.“ Mehr als an Kinder in ihrer realen Umgebung habe Abedi sich daher mit Ronja Räubertochter oder Momo identifizieren können. Daran könne sie sich heute noch sehr lebhaft erinnern.
+        img(:src="imagehosting_path(480, '64f4c2558e6dbe22e18440bda9ca9672.png')" loading="lazy").uk-width-small.uk-float-right
+        | Das sei nicht der der einzige Aspekt, in dem Abedi ihre eigene Lebensgeschichte sehe. Lolas Vater kommt aus Brasilien. Weil ihr Papai – so nennt Lola ihren Vater auf portugiesisch – in einer kleinen Stadt rassistische Diskriminierung erfährt, zieht sie mit ihren Eltern nach Hamburg, in eine große Stadt. Auch Abedi lebt in Hamburg, der Vater ihrer Töchter ist Brasilianer und auch sie selbst hat eine internationale Geschichte. Ihr Vater kommt aus dem Iran, sie kenne ihn aber kaum. An ihre Schulzeit erinnert sie sich: „Da waren Klassen nicht so multikulturell ausgerichtet wie heute. Da gab es dann ein paar Gastarbeiterkinder und mich. Und bei mir war es nicht so richtig definierbar, weil ich eben dieses seltsame Kind mit dem ausländischen Namen war.“ Mehr als an Kinder in ihrer realen Umgebung habe Abedi sich daher mit Ronja Räubertochter oder Momo identifizieren können. Daran könne sie sich heute noch sehr lebhaft erinnern.
 
       h2 Der halbste Held
 
@@ -34,7 +34,7 @@
       p
         | Eine Identifikationsfigur schaffen, nahbar sein – darum geht es auch der Autorin Andrea Schomburg, wenn sie Geschichten für Kinder schreibt. Zum Beispiel „Der halbste Held der ganzen Welt.“ Im Gegensatz zu Lola ist der halbste Held Paul ein eher introvertiertes, ängstliches Kind. Er ist nicht nur auf der Suche nach Freundschaft, sondern wird auch noch in der Schule gemobbt.&nbsp;
 
-        img(:src="imagehosting_path(480, 'dddbe8ccac370df3c67d45073c2734f2.png')").uk-width-small.uk-float-right
+        img(:src="imagehosting_path(480, 'dddbe8ccac370df3c67d45073c2734f2.png')" loading="lazy").uk-width-small.uk-float-right
 
         | Bis ihm auf dem Schulklo, sein Rückzugsort, plötzlich eine Fee begegnet. Sie verspricht ihm ein blaues Wunder und schickt den halbsten Helden auf sein Abenteuer. Das erlebt Paul nicht etwa wie Lola auf einer Rockstar-Bühne, sondern im Bielefelder Rathaus. Mit an seiner Seite: ein schlecht gelaunter, kleiner Elefant. Für die Autorin Andrea Schomburg eine Heldenreise par excellence, die nicht nur in Märchen und Sagen, sondern in uns allen präsent sei: „Wir brechen auf in unbekannte Gegenden, wir begegnen Gefahren, wir begegnen Antagonisten. Wir knüpfen Kontakte mit Unterstützern und Freunden. Wir werden konfrontiert mit unseren schlimmsten Ängsten. Und wir überwinden sie und schaffen das. Wir kehren zurück in unser Leben, oder doch in ein ganz anderes – also eigentlich ist es das, was wir alle in uns haben.“
 
@@ -45,8 +45,8 @@
       AudioPlayer(file="/die-kleinen/audio_2_schomburg.mp3" backgroundColor="transparent" progressColor="#000" waveColor="#7fcff1")
 
       p
-        img(:src="imagehosting_path(480, 'f4f9d7b0fa2adfe16dc60331ee358145.png')").uk-width-small.uk-float-left
-        | In ihrer eigenen Kindheit sei für Schomburg dagegen ein ganz klassischer Held bedeutsam gewesen: Old Shatterhand. An das Alter Ego des Autoren Karl May erinnert sich Schomburg: „der kann einfach alles, der kann Fremdsprachen, der kann schießen, der kann reiten, der ist wahnsinnig edel und mutig, der ist so ideal.“ Neben der Helden-Figur habe sie vor allem einen attraktiven Mann in ihm gesehen. „In den war ich einfach verknallt“, sagt die Autorin. Heute resümiert sie: „Im Grunde ist diese Helden-Welt von Old Shatterhand auch auf eine Art sehr verlogen. Der ist einfach so überhöht.“
+        img(:src="imagehosting_path(480, 'f4f9d7b0fa2adfe16dc60331ee358145.png')" loading="lazy").uk-width-small.uk-float-left
+        | In ihrer eigenen Kindheit sei für Schomburg dagegen ein ganz klassischer Held bedeutsam gewesen: Old Shatterhand. An das Alter Ego des Autoren Karl May erinnert sich Schomburg: „Der kann einfach alles, der kann Fremdsprachen, der kann schießen, der kann reiten, der ist wahnsinnig edel und mutig, der ist so ideal.“ Neben der Helden-Figur habe sie vor allem einen attraktiven Mann in ihm gesehen. „In den war ich einfach verknallt“, sagt die Autorin. Heute resümiert sie: „Im Grunde ist diese Helden-Welt von Old Shatterhand auch auf eine Art sehr verlogen. Der ist einfach so überhöht.“
 
       h2 „Auch du bist nicht perfekt, aber auch du kannst es schaffen“
 

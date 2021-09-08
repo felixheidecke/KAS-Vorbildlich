@@ -38,7 +38,7 @@
 
       Chart(v-if="hasVacData" :options="chart1").uk-width-1-1.uk-height-medium.uk-margin-large-bottom
 
-      Video(:src="videoNinaMunddorf" controls)
+      YouTube(videoId="r-4LrTse9_s")
 
       p Bisher hat die Flugbegleiterin noch ein paar Flügen pro Woche, auf denen sie arbeitet. Im April hat sie für einen Monat unbezahlten Urlaub genommen. Dann will sie Vollzeit bei der Impfkampagne arbeiten. Bisher war sie für weniger Stunden angestellt. „Das geht für mich mittlerweile über Arbeit hinaus. Ich merke, hier bewirke ich wirklich etwas.“
 
@@ -57,7 +57,7 @@
 
       p Ob das nicht zu viel ist, neben ihrer Vollzeit-Tätigkeit in der Klinik? „Ich finde, die Freizeit, die ich gerade habe, nutze ich damit in dieser Krise sehr gut.“ Julia Lawitzke schöpft Kraft daraus, bei etwas zu helfen, dass aktiv zur Überwindung von Lockdown, Pandemie und Stillstand beiträgt.
 
-      Video(:src="videoJuliaLawitzke" controls)
+      YouTube(videoId="pAb3ZTBdasA")
 
       p Über Corona-Leugner und Impfgegner kann Lawitzke nur den Kopf schütteln. „Die sollten sich mal anschauen, wie es aktuell wirklich auf den Intensivstationen der Krankenhäuser aussieht.“ Auch wegen dieser Erlebnisse tue es so gut, im Impfzentrum zu arbeiten.
 
@@ -86,7 +86,7 @@
 
       p „Im Grunde ist jeder Tag hier ja auch eine Großveranstaltung. Immer passiert etwas Unvorhergesehenes, alles soll möglichst reibungslos laufen. Im Impfzentrum kann ich tatsächlich mein Wissen aus den zehn Jahren Agentur-Arbeit einbringen“, sagt Tänzer. „Für mich macht es gerade sehr viel mehr Sinn, hier zu helfen, anstatt kleinteilig pandemiegerechte Events zu planen.“ Tänzer hat den Corona-Frust bei ihrer eigentlichen Arbeit gegen gute Stimmung im Impfzentrum getauscht: „Diese massive Erleichterung und Dankbarkeit der Menschen, die sich impfen lassen, zeigen mir immer wieder, warum ich das hier mache.“
 
-      Video(:src="videoOliviaTaenzer" controls)
+      YouTube(videoId="K7Z45G1hx1M")
 
       p Für Olivia Tänzer ist der Job im Impfzentrum ein wenig persönliche Krisenbewältigung: „Dass ich hier arbeite, entspringt auch dem Wunsch, dass ich durch die Impfkampagne schneller in meinen ursprünglichen Beruf zurückkehren kann.“
 
@@ -105,7 +105,7 @@
 
       p Dabei scheint Ferber die kleinen Momente aber nicht aus dem Blick zu verlieren – beispielsweise, wenn jemand vor Freude weint, weil die Spritze für ihn nach einem Jahr Pandemie so viel bedeutet. Sie muss lachen, als sie erzählt, dass die meisten Menschen verwundert seien, wie nett es im Impfzentrum zugehe. Eher ungewöhnlich für das sonst so schroffe Berlin. „Wir arbeiten also nicht nur am Image der Johanniter, sondern an dem der ganzen Stadt“, sagt Ferber scherzend. Über ihre Arbeit sagt sie:
 
-      Video(:src="videoAndreaFerber" controls)
+      YouTube(videoId="EWrRutkv3uk")
 
       p Wer in den Impfzentren mithilft, hat diesen Job oft noch nie gemacht.  Trotzdem scheint die aus dem Boden gestampfte Infrastruktur gut zu funktionieren. Die meisten Impflinge seien am Ende überrascht, wie unkompliziert alles von statten gehen würde, erzählen die Helferinnen.
 
@@ -116,12 +116,9 @@
 <script>
 import { map } from 'lodash'
 import { Chart } from 'highcharts-vue'
-import moment from 'moment'
 
 import imagehosting from '~/plugins/imagehosting.mixin'
 import mediaquery from '~/plugins/mediaquery.mixin'
-
-moment.locale('de')
 
 export default {
   name: 'Impfhelferinnen',
@@ -263,45 +260,6 @@ export default {
         firstDoseByType: data.secondVaccination.vaccination,
         secondDoseByType: data.vaccination
       }
-    },
-
-    videoNinaMunddorf () {
-      return {
-        'video/webm': '/impfhelferinnen/nina_munddorf.webm',
-        'video/mp4': '/impfhelferinnen/nina_munddorf.mp4'
-      }
-    },
-
-    videoJuliaLawitzke () {
-      return {
-        'video/webm': '/impfhelferinnen/julia_lawitzke.webm',
-        'video/mp4': '/impfhelferinnen/julia_lawitzke.mp4'
-      }
-    },
-
-    videoOliviaTaenzer () {
-      return {
-        'video/webm': '/impfhelferinnen/olivia_taenzer.webm',
-        'video/mp4': '/impfhelferinnen/olivia_taenzer.mp4'
-      }
-    },
-
-    videoAndreaFerber () {
-      return {
-        'video/webm': '/impfhelferinnen/andrea_ferber.webm',
-        'video/mp4': '/impfhelferinnen/andrea_ferber.mp4'
-      }
-    },
-
-    videoClassName () {
-      const className = ['uk-margin-medium-bottom']
-
-      if (this.mediaquery.s) {
-        className.push('uk-box-shadow-large')
-        className.push('uk-padding-small')
-      }
-
-      return className
     }
   },
 
@@ -320,7 +278,10 @@ export default {
     },
 
     parseDate (date) {
-      return moment(date).format('DD.MM.YYYY H:m')
+      const dateObject = Date.parse(date)
+      const newDate = new Date(dateObject)
+
+      return newDate.toLocaleDateString('de-DE')
     }
   }
 }

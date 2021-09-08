@@ -1,9 +1,9 @@
 <template>
   <section :class="wrapperClass">
     <div class="uk-position-relative" @click="playPause">
-      <img v-if="img" :src="img">
+      <img v-if="img" :src="img" loading="lazy">
       <div :id="id" class="audio-player__waveform" :style="{ background: backgroundColor } " :class="{ 'uk-position-bottom' : img }" />
-      <img v-show="img" src="/icons/icon-audio.svg" class="audio-player__icon uk-position-top-right uk-position-small">
+      <img v-show="img" src="/icons/icon-audio.svg" loading="lazy" class="audio-player__icon uk-position-top-right uk-position-small">
     </div>
     <p hidden>
       <slot />

@@ -31,9 +31,11 @@
         template(#answer)
           p Ich hatte vorher im Büro an der Uni gearbeitet, diese Routine war einfach nichts für mich. Ich bin irgendwann an den Punkt gelangt, wo ich nicht zum fünfhundertsten Mal am Tag im Büro darauf angesprochen werden wollte, dass der Drucker nicht druckt. Es war mir lieber, ein Kind sagt mir: Ich habe in die Hose gemacht, kannst du mir helfen? Das war die bessere Option.
 
-      h4
+      h4(v-if="mediaquery.s")
         | Erzieher und Erzieherinnen in Deutschland
         br
+
+      p(v-else).uk-text-xsmall.uk-text-bold Die zehn beliebstesten Handwerksberufe
 
       .uk-grid(uk-grid)
         .uk-width-1-1
@@ -85,7 +87,7 @@
       TextboxOrange
         template(#question) Je jünger die Kinder sind, desto weniger Männer arbeiten in dem Bereich. Was hat es damit auf sich?
         template(#answer)
-          Video(:src="{ 'video/webm': '/neue-vorbilder/simon_1.webm', 'video/mp4': '/neue-vorbilder/simon_1.mp4' }" controls).uk-pull-small.uk-margin-bottom
+          YouTube(videoId="nEg9QRLPAR0").uk-aspect-ratio-16-9
           p Für die meisten Männer ist es schlichtweg einfacher, mit älteren Kindern zu arbeiten. Die älteren Kinder reagieren auf Erzieher noch mal anders. Sie nehmen die Vorbildrolle viel stärker wahr, die man als Mann ausstrahlt. Es gibt aber oftmals auch noch Vorbehalte von Eltern gegenüber Männern in der Krippe. Dort gehört das Wickeln von Kleinkindern beispielsweise zur täglichen Arbeit. Manche Männer wollen sich keinem Generalverdacht aussetzen. Bei mir war der Schritt in den Kindergarten tatsächlich das Interesse an der Arbeit. Ich habe aber viele Kollegen in der Ausbildung getroffen, die gesagt haben, es sei zwar interessant in der Krippe zu arbeiten, aber sie möchten nicht Gefahr laufen, dass sie beschuldigt werden oder ihnen etwas angelastet wird.
 
       TextboxOrange
@@ -126,7 +128,6 @@
         template(#question) Was sind denn die gängigen Vorurteile euch Malern gegenüber?
         template(#answer)
           AudioPlayer(file="/neue-vorbilder/jessica_03.mp3" :img="imagehosting_path(960, 'bild_4.jpg')").uk-margin-top.uk-margin-bottom
-          p Dass wir nur die sind, die dreckig rumlaufen, die alles einsauen und Wände nur weiß streichen. Wie vielfältig der Beruf ist und was für schöne Sachen wir machen, das sehen viele nicht. Beruf sind jetzt zum Beispiel auch Bodenbelege. Auch das machen wir mit als ich. Wir machen jetzt keinen Echtholzparkett wie der Schreiner, aber auch ganz viele verschiedene Bodenbeläge. Alles, was in Großraumbüros liegt, dieser Nadelfilz oder so diese Riesen Anna Rollenware es sind alles Teilbereiche formaler Beruf. Wer weiß, wo auch keiner. Und wie alt es sind, so viele Sachen, wo man sagt, das ist der. Der Beruf ist einfach so vielfältig. Und man kann damit so viel machen. Das ist einfach ich ich. Ich habe das Gefühl, das kommt noch nicht so so rüber. Ach, sind diese Außendarstellung, und da ist ein bisschen auch. Sind die dem alle auch selbst dafür verantwortlich, wie sie sich halt auch präsentieren, als ich sie auch oft genug für Mäuse? Ujuiu das sieht jetzt net so Bombe aus.
 
       TextboxOrange
         template(#question) Wie hältst du dieses Kindergeschrei den ganzen Tag aus?
@@ -141,7 +142,7 @@
       TextboxOrange
         template(#question) Reagieren auch die Kinder anders auf dich als bei den Kolleginnen?
         template(#answer)
-          Video(:src="{ 'video/webm': '/neue-vorbilder/simon_2.webm', 'video/mp4': '/neue-vorbilder/simon_2.mp4' }" controls).uk-pull-small.uk-margin-bottom
+          YouTube(videoId="BBlebPVBAgw").uk-aspect-ratio-16-9
           p Klar nehmen die Kinder einen als Mann noch mal anders wahr. Sie projizieren ihr Papa-Rollenmodell gefühlt auch eher auf einen Erzieher als die Mama-Rolle auf eine Erzieherin. Das, was typischerweise die Väter mit ihren Kindern machen, also toben, ein bisschen wilder und lauter sein, das wird von den Kindern bei Erziehern häufig gewünscht. Viele männliche Erzieher bieten das auch gerne. Ich mache auch immer wieder mal Quatsch mit den Kindern. Das sind Situationen, in denen sich die Rollenklischees bewahrheiten.
 
       TextboxBerry
@@ -156,6 +157,7 @@
 </template>
 <script>
 import imagehosting from '~/plugins/imagehosting.mixin'
+import mediaquery from '~/plugins/mediaquery.mixin'
 
 export default {
 
@@ -185,7 +187,8 @@ export default {
     }
   },
   mixins: [
-    imagehosting
+    imagehosting,
+    mediaquery
   ],
   layout: 'article',
 

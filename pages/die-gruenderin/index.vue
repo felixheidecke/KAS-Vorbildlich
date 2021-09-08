@@ -26,7 +26,7 @@
 
     Container(size="small" margin="medium")
 
-      p Ein Kontakt aus dem Gründungszentrum hatte Anfang 2020 eine Idee, die Jessica Büttner begeisterte. Sie stieg mit ein und die Zwei gründete das Software-Start-Ups idea-ly. Als Frau ist sie die Ausnahme in der männlich-dominierten Start-Up Welt. 2019 lag der Anteil der Gründerinnen bei 15,7 Prozent, die anderen Gründerteams sind rein männlich.
+      p Ein Kontakt aus dem Gründungszentrum hatte Anfang 2020 eine Idee, die Jessica Büttner begeisterte. Sie stieg mit ein und die Zwei gründete das Software-Start-Up idea-ly. Als Frau ist sie die Ausnahme in der männlich-dominierten Start-Up Welt. 2019 lag der Anteil der Gründerinnen bei 15,7 Prozent, die anderen Gründerteams sind rein männlich.
 
       Chart(:options="chart")
 
@@ -47,7 +47,7 @@
 
     Container(size="small" margin="medium")
 
-      p Aber auch die Gründer, die sie während ihrer Zeit im Start-Ups als Beraterin kennenlernte, inspirierten sie und brachten sie näher zur eigenen Gründung. Dabei spielte das Geschlecht keine Rolle.
+      p Aber auch die Gründer, die sie während ihrer Zeit im Start-Up als Beraterin kennenlernte, inspirierten sie und brachten sie näher zur eigenen Gründung. Dabei spielte das Geschlecht keine Rolle.
 
     Container(v-if="mediaquery.s")
       AudioPlayer(file="/die-gruenderin/audio_05.mp3" :img="imagehosting_path(1600, 'f85537e500b1c80dbd922ee0dc67cebd.png')" progressColor="#FFE94A" waveColor="#FFF").uk-margin-medium-top.uk-margin-medium-bottom.uk-box-shadow-large.uk-padding-small
@@ -56,7 +56,7 @@
 
     Container(size="small" margin="medium")
 
-      p Angst vorm Scheitern hat Jessica Büttner nicht: „Klar, ich kenne die Zahlen. Die Möglichkeit mit einem Startup zu scheitern, ist relativ hoch. Damit müssen wir rechnen und das einkalkulieren. Aber selbst wenn, was kann denn passieren? Ich habe keine Verantwortung, keine Kinder, keine Schulden. Zu Gründen ist auch ein Investment in mich selbst. In mein Wissen. Diese Lernkurve mache ich nirgendwo sonst durch.“
+      p Angst vorm Scheitern hat Jessica Büttner nicht: „Klar, ich kenne die Zahlen. Die Möglichkeit mit einem Start-Up zu scheitern, ist relativ hoch. Damit müssen wir rechnen und das einkalkulieren. Aber selbst wenn, was kann denn passieren? Ich habe keine Verantwortung, keine Kinder, keine Schulden. Zu Gründen ist auch ein Investment in mich selbst. In mein Wissen. Diese Lernkurve mache ich nirgendwo sonst durch.“
 
       AudioPlayer(file="/die-gruenderin/audio_06.mp3" :img="imagehosting_path(1600, '5880f46d581559fe095ec0746f9543de.jpeg')" progressColor="#FFE94A" waveColor="#FFF" pos="right").uk-width-medium.uk-margin-small-top.uk-margin-medium-bottom
 

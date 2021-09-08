@@ -22,13 +22,13 @@
 
       p Für manche Menschen gibt es den einen Moment, der alles entzündet, der sie über eine Schwelle hebt, hinter die sie dann nie mehr zurück können. Für Eliza Diekmann war dieser Moment ein Zeitungsartikel.
 
-      p Nach kurzer Zeit wird sie von den Grünen und der SPD-Fraktion angesprochen, ob Sie sich vorstellen könnte, zu kandidieren. Bis ahin hatte Eliza Diekmann Politik immer nur vom Spielfeldrand aus begleitet. Als Journalistin hat sie für Nachrichtenagenturen über Politik in Berlin und Brüssel berichtet. So richtig konnte sie sich selbst und das klassische Bild einer Bürgermeisterin nicht in Einklang bringen.
+      p Nach kurzer Zeit wird sie von den Grünen und der SPD-Fraktion angesprochen, ob Sie sich vorstellen könnte, zu kandidieren. Bis dahin hatte Eliza Diekmann Politik immer nur vom Spielfeldrand aus begleitet. Als Journalistin hat sie für Nachrichtenagenturen über Politik in Berlin und Brüssel berichtet. So richtig konnte sie sich selbst und das klassische Bild einer Bürgermeisterin nicht in Einklang bringen.
 
       AudioPlayer(file="/die-erste/frage-buergermeisterin.mp3" :img="imagehosting_path(480, 'frage_buergermeisterin.jpg')" pos="right").uk-width-medium.uk-margin-small-top.uk-margin-medium-bottom
 
       p Sie entwirft deshalb ein neues Bild - das einer Bürgermeisterin in einer moderierenden Funktion, ohne parteipolitische Ambitionen. Diekmann entscheidet sich bewusst dafür, als parteilose Kandidatin anzutreten. Zwar mit einem Bündnis aus verschiedenen Fraktionen hinter sich, aber weitestgehend unabhängig. So gestaltet sie auch ihren Wahlkampf. Sie will offen sein für Ideen aus der Bürgerschaft. Das umsetzen, wofür Kommunalpolitik bis dahin in ihren Augen kaum steht: Bürgernähe und Transparenz. „Mein Wahlkampf war wirklich ganz anders als das hier vorher so gelebt wurde und hat viele Menschen einfach aufmerksam gemacht, mal hinzuschauen. Und plötzlich hatten sie das Gefühl: Jetzt passiert irgendwas, eine Dynamik. Ich kann wieder mitmachen und mich einbringen.“
 
-      Video(v-bind="videoWochenrueckblick")
+      YouTube(videoId="R37oH3np0g0").uk-aspect-ratio-16-9
 
       p Sie kommuniziert über Social Media, zeigt ihr Gesicht, macht Videos, trifft auf Menschen. Sie will auch diejenigen erreichen, die sich bisher kaum für die Politik vor Ort interessiert haben. „Auf einen Kaffee mit Eliza“ ist ein Kernprojekt ihrer Kampagne. Jeden Freitagnachmittag setzt sie sich alleine in ein anderes Café in der Stadt und wartet darauf, dass jemand sie dort aufsucht, ein Gespräch mit ihr beginnt. So erfährt sie auch, was sich die Stadtgemeinschaft für Coesfeld wünscht. Sie schreibt alle Punkte auf, fertigt Mind Maps an. Es sind auch diese Gespräche, auf deren Basis sie nach und nach ihr Wahlprogramm entwickelt.
 
@@ -44,7 +44,7 @@
 
       p Seit November vergangenen Jahres ist Eliza Diekmann im Amt. Sie möchte jetzt andere Themen stärker in den Fokus rücken: Mobilität, Familien, Aufenthaltsqualität in der Stadt. Männer sehen Themen, die Männer betreffen, sagt sie. Und dass die Innenstadt von Coesfeld lange wirkte wie eine lieblos eingerichtete Single-Wohnung. Was ihr fehlte, war der politische Blick auf die Belange aller Wählergruppen. Stattdessen gab es eine Entfremdung zwischen der Bürgerschaft und ihren Vertretern. „Vielleicht auch, dass viele das Gefühl haben, die da oben und wir hier unten. Und wir werden eh nicht gehört.“ Mit Beginn ihrer Amtszeit zieht Diekmann vom Stadtrand aus mitten in die Stadt, in eine Wohnung, fünf Minuten vom Rathaus entfernt. Ihre Art zu zeigen: Ich bin dabei, ich gehöre dazu, diese Stadt ist auch mein Zuhause. Auch nach ihrem Wahlkampf will sie ansprechbar sein und Menschen motivieren, ihre Ideen beizutragen. Jede Woche veröffentlicht sie auf Instagram, wo ihr mittlerweile 4000 Menschen folgen, einen Wochenrückblick. Darin berichtet sie der Stadtgemeinschaft von den Themen, mit denen sie sich in dieser Woche besonders beschäftigt hat und von den Terminen, die sie besucht hat. Bis heute steht ihre private Handynummer für alle öffentlich auf ihrer Website. „Ich bekomme Whats-App-Nachrichten, Facebook-Nachrichten, werde auf der Straße angesprochen.“ Sie ist die Bürgermeisterin geworden, deren Bild sie für sich entworfen hatte.
 
-      Video(v-bind="videoWahlkampf")
+      YouTube(videoId="hLv0pe3gpAc").uk-aspect-ratio-16-9
 
       p „Ich bin eine Quotenfrau“, sagt sie. Sie lächelt. „Und ich bin stolz darauf.“ Diekmann weiß, dass viele in Coesfeld sich eine Frau gewünscht haben und sie auch deshalb gewonnen hat. Sie weiß auch, dass sie jetzt für viele ein Vorbild ist. Eine schwierige Vorstellung, aber auch eine, die sie mit Stolz erfüllt. Und wieder mal mit großer Demut und mit der Verantwortung, dieser Vorbildfunktion auch gerecht zu werden. Sie selbst hatte vor allem Vorbilder auf der großen Weltbühne, Hillary, Michelle und nicht zuletzt Oprah. Fehlen uns weibliche Vorbilder für politisches Engagement vor Ort?
 
@@ -157,10 +157,12 @@ export default {
 .picto {
   width: 100%;
   max-width: 10%;
+  max-height: 10%;
   padding: $global-small-gutter / 2;
 
   @media (min-width: $breakpoint-small) {
     max-width: 5%;
+    max-height: 5%;
   }
 
   &-wrapper {

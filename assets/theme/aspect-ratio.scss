@@ -1,0 +1,17 @@
+[class^="uk-aspect-ratio"] {
+  display: flow-root;
+  position: relative;
+
+  &:before {
+    content: '';
+    float: left;
+  }
+}
+
+.uk-aspect-ratio-16-9 {
+  padding-bottom: 56.25% !important;
+}
+
+.uk-aspect-ratio-1-1 {
+  padding-bottom: 50% !important;
+}
